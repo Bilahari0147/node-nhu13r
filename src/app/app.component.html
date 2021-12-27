@@ -1,0 +1,7 @@
+<span>Name: </span>
+<input type="text" [(ngModel)]="searchTerm">
+<span>{{searchTerm}}</span>
+<h1>Darwinn</h1>
+<div *ngFor="let item of items.results | search: searchTerm">
+  <span>{{item.name}}</span>
+</div>
